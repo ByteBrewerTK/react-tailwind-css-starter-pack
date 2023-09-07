@@ -60,7 +60,8 @@ export default function EmpForm() {
                 placeholder="Enter Your Name"
                 name="user"
                 id="user"
-                {...register('user',{ required: true })}                
+                {...register('user',{ required: true })}
+                maxLength={30}                
                 className = "h-[3.5rem] rounded-lg px-2 bg-transparent border"
                 />
             </label>
@@ -82,6 +83,7 @@ export default function EmpForm() {
                 placeholder="Enter Your Employee Title"
                 name="title"
                 id="title"
+                maxLength={30}
                 {...register('title',{ required: true })}
                 className = "h-[3.5rem] rounded-lg px-2 bg-transparent border"
                 />
@@ -93,6 +95,7 @@ export default function EmpForm() {
                 placeholder="Enter Your Employee Department"
                 name="department"
                 id="department"
+                maxLength={30}
                 {...register('department', { required: true })}
                 className = "h-[3.5rem] rounded-lg px-2 bg-transparent border"
                 />
@@ -104,6 +107,7 @@ export default function EmpForm() {
                 placeholder="Enter Your Employee Role"
                 name="role"
                 id="role"
+                maxLength={30}
                 {...register('role', { required: true })}
                 className = "h-[3.5rem] rounded-lg px-2 bg-transparent border"
                 />
